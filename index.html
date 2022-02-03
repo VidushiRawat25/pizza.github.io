@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="navbar">
+    <a class="navbar-brand" href="/">
+      <div class="logo-image">
+            <img src="pizaa.png" class="img-fluid">
+      </div>
+</a>
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+    <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+  </div>
+  
+
+  <div class="w3-content w3-section" style="max-width:1000px; height: 40rem;">
+    
+  
+    <img class="mySlides w3-animate-fading" src="piza1.jpg" style="width: 100%; height:100%">
+    <img class="mySlides w3-animate-fading" src="piza2.jpg" style="width: 100%; height:100%">
+    <img class="mySlides w3-animate-fading" src="piza3.jpg" style="width: 100%; height:100%">
+    <img class="mySlides w3-animate-fading" src="piza4.jpg" style="width: 100%; height:100%">
+  </div>
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900" style="font-family: 'Dancing Script', cursive;">Our Special</h1>  
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="piza1.jpg" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Pepperoni pizza</h2>
+            <p class="leading-relaxed text-base">You Better cut the pizza in four peices,because I'm not hungry enough to eat six.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="piza2.jpg" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Extra Cheese Pizza</h2>
+            <p class="leading-relaxed text-base">There's no better feeling in the world than a warm pizza box on your lap.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="burger.jpg" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Burger Buzz</h2>
+            <p class="leading-relaxed text-base">Eat clean stay fit and have a burger to stay sane.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="noodles.jpg" alt="content">
+            
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Veg chowmein</h2>
+            <p class="leading-relaxed text-base">A bowl of spaghetti can make your day better,get some today.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <hr>
+        
+    <!-- Menu Container -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+        
+          <h1 class="w3-center w3-jumbo" style="margin-bottom:64px; font-family:'Dancing Script', cursive; ">THE MENU</h1>
+          <div class="w3-row w3-center w3-border w3-border-dark-grey">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+              <div class="w3-col s4 tablink w3-padding-large ">Pizza</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+              <div class="w3-col s4 tablink w3-padding-large ">Pasta</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+              <div class="w3-col s4 tablink w3-padding-large ">Other</div>
+            </a>
+          </div>
+            
+          <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.200</span></h1>
+            <p class="w3-text-grey">Fresh tomatoes, Fresh mozzarella, Fresh basil</p>
+            <hr>
+         
+            <h1><b>Farm Fresh</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.340</span></h1>
+            <p class="w3-text-grey">Onion, Capsicum, Tomato, Corn</p>
+            <hr>
+            
+            <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.400</span></h1>
+            <p class="w3-text-grey">Fresh tomatoes, Mozzarella, Chicken, Onions</p>
+            <hr>
+      
+            <h1><b>Tandoori Paneer</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.400</span></h1>
+            <p class="w3-text-grey">Tandoori Sauce, Onion, Capsicum, Paneer, Red pepper</p>
+            <hr>
+      
+            <h1><b>Chicken Mix</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">Rs.380</span></h1>
+            <p class="w3-text-grey">Fresh tomatoes, Mozzarella, Hot pepporoni, Hot sausage, Chicken Perry</p>
+            <hr>
+      
+            <h1><b>American Hot</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">Rs.400</span></h1>
+            <p class="w3-text-grey">Onion, Capsicum, Mushroom, Jalepeno, Paneer</p>
+          </div>
+      
+          <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.120</span></h1>
+            <p class="w3-text-grey">Special sauce, mozzarella, parmesan, red sauce</p>
+            <hr>
+         
+            <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.120</span></h1>
+            <p class="w3-text-grey">Ravioli filled with cheese</p>
+            <hr>
+            
+            <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.110</span></h1>
+            <p class="w3-text-grey">Fresh tomatoes, onions, paneer</p>
+            <hr>
+      
+            <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.140</span></h1>
+            <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+          </div>
+      
+      
+          <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">Rs.100</span></h1>
+            <p class="w3-text-grey">Ask the waiter</p>
+            <hr>
+         
+            <h1><b>Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.80</span></h1>
+            <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic, cheese, paneer</p>
+            <hr>
+            
+            <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.60</span></h1>
+            <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+            <hr>
+            
+            <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RS.120</span></h1>
+            <p class="w3-text-grey">Tomatoes, mozzarella, red sauce</p>
+          </div><br>
+      
+        </div>
+      </div> </section>
+
+      <hr>
+      <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Get Direction</a><br>
+        +91 99****9999 <br>
+        Pizzahub@gmail.com
+        <div class="w3-xlarge w3-section">
+            <a href="*"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="*"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="*"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+            <a href="*"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="*"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="*"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+        <hr>
+        copyright &copy PizzaHub.com 2021
+    </footer>
+  
+
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 8000);    
+    }
+
+    function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+    </script>
+</body>
+</html>
